@@ -1,0 +1,8 @@
+{ "index" : { "_index" : "blog", "_type" : "article" } }
+{ "title" : "" }
+{ "index" : { "_index" : "blog", "_type" : "article" } }
+{ "somefield" : "hello hello hello" }
+{ "index" : { "_index" : "blog", "_type" : "article" } }
+{ "somefield" : "Whoo WHoo hooo hooo hoooooooo hoooo" }
+{ "index" : { "_index" : "blog", "_type" : "article" } }
+{ "somefield" : "Really need the water in Cape Town" }

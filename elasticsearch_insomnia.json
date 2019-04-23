@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-25T15:23:06.871Z",
+	"__export_date": "2019-04-23T15:40:46.090Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -42,8 +42,8 @@
 			"description": "",
 			"environment": {},
 			"metaSortKey": -1547296645231,
-			"modified": 1547296645231,
-			"name": "indices",
+			"modified": 1553686732534,
+			"name": "analysis",
 			"parentId": "wrk_30a1e0a6c22e48d0bbe2c19248e6474c",
 			"_type": "request_group"
 		},
@@ -53,8 +53,8 @@
 			"description": "",
 			"environment": {},
 			"metaSortKey": -1548042771106,
-			"modified": 1552490404651,
-			"name": "2. Query basic",
+			"modified": 1553686645918,
+			"name": "Query",
 			"parentId": "wrk_30a1e0a6c22e48d0bbe2c19248e6474c",
 			"_type": "request_group"
 		},
@@ -64,8 +64,8 @@
 			"description": "",
 			"environment": {},
 			"metaSortKey": -1552483906845,
-			"modified": 1552483906845,
-			"name": "1. Setup",
+			"modified": 1553686803871,
+			"name": "Indices / Document",
 			"parentId": "wrk_30a1e0a6c22e48d0bbe2c19248e6474c",
 			"_type": "request_group"
 		},
@@ -79,166 +79,6 @@
 			"name": "0. Basic",
 			"parentId": "wrk_30a1e0a6c22e48d0bbe2c19248e6474c",
 			"_type": "request_group"
-		},
-		{
-			"_id": "req_d3d85e258a7b46458275914ec32ecc5c",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\tquery: {\n\t\t\n\t}\n}"
-			},
-			"created": 1547297234477,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1547296059124.5,
-			"method": "GET",
-			"modified": 1553263173660,
-			"name": "Index _settings",
-			"parameters": [],
-			"parentId": "fld_ed2e9136b34d48d5ba2775395cb25b79",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ base_url  }}/product_development/_mappings/product ",
-			"_type": "request"
-		},
-		{
-			"_id": "req_81f637305ccc40549bb3245ca95a66e0",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": ""
-			},
-			"created": 1547297795693,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1547296355988.75,
-			"method": "GET",
-			"modified": 1552484701449,
-			"name": "Get a Document by ID",
-			"parameters": [],
-			"parentId": "fld_ed2e9136b34d48d5ba2775395cb25b79",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ base_url  }}/product_development/product/311091",
-			"_type": "request"
-		},
-		{
-			"_id": "req_67b009d7dad749a69311a8d8a7043b50",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\tquery: {\n\t\t\n\t}\n}"
-			},
-			"created": 1548041707128,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1547295762260.25,
-			"method": "GET",
-			"modified": 1552487244599,
-			"name": "index _mappings",
-			"parameters": [],
-			"parentId": "fld_ed2e9136b34d48d5ba2775395cb25b79",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ base_url  }}/catalog_development/_mappings ",
-			"_type": "request"
-		},
-		{
-			"_id": "req_88e4c8ac759d4a4b8eb736ec23a00221",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": ""
-			},
-			"created": 1548041745785,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1547295613828.125,
-			"method": "GET",
-			"modified": 1552487258536,
-			"name": "index _mappings/product",
-			"parameters": [],
-			"parentId": "fld_ed2e9136b34d48d5ba2775395cb25b79",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ base_url  }}/product_development/_mappings/product ",
-			"_type": "request"
-		},
-		{
-			"_id": "req_b31a4869e5ca44aa86270cc4ce16b293",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\"id\":374368,\"retail_price\":\"3.6\",\"purchase_price\":\"1.56\",\"is_oem\":false,\"is_popular\":false,\"is_value_pack\":false,\"created_at\":\"2018-04-23T09:09:39-04:00\",\"barcode_sign\":1,\"sku\":\"test111\",\"name\":\"Brother LC02Bk New Compatible Black Ink Cartridge\",\"model\":\"LC02Bk\",\"fr_name\":\"Brother LC02Bk Nouvelle  Cartouche D'encre  Compatible Noir\",\"keywords\":\"LC,02,Bk,LC02Bk,LC 02 Bk,Brother,MFC-7100,MFC,7100,MFC7100,MFC 7100,MFC-7150C,7150C,MFC7150C,MFC 7150C,MFC-7160C,7160C,MFC7160C,MFC 7160C,MFC-730,730,MFC730,MFC 730,MFC-740,740,MFC740,MFC 740,MFC-760,760,MFC760,MFC 760,MFC-9100C,9100C,MFC9100C,MFC 9100C,ink cartridge,ink cartridges,inkjet cartridge,inkjet cartridges,printer supplies,pinter cartridge,printer cartridges,discount,cheap,cheapest,on sale,compatible,replacement\",\"brand\":null,\"introduction\":\"\\nLooking for LC02Bk Ink Cartridge online? From now on you will be able to order Brother cartridges online with the cheapest price from 123inkcartridges.ca.\\n This economical yet  high quality compatible LC02Bk Ink Cartridge will be the perfect solution to help you to save the printing cost. The cartridge is made from all new components, and it will be compatible to your printer models without any problem when you are replacing your current Brother LC02Bk Ink Cartridge. As an environmental friendly company, our manufacturers have passed ISO14001 certificate, and have passed ISO9001 for their quality.\\n Our new compatible LC02Bk Ink Cartridge offers you the same printing quality as good as OEM Brother LC02Bk cartridges. Moreover,it will also print at least the same amount of pages as its OEM counterparts. \\nOur company, 123inkcartridges.ca, ensures that all of its compatible products are guaranteed to meet all of your satisfactions. We ship to all of Canada from our Western warehouse located in Vancouver and our Eastern warehouse located in Montreal. The delivery is as quick as ever.\\n\\n\",\"specification\":\"\",\"barcodes\":[],\"main_display_in_site\":1,\"supplier_models\":[],\"supplier_ids\":[],\"catalog_ids\":[5030,5031,5032,5033,5034,5035,5054],\"three_month_in_storage\":true,\"has_mtl_stock\":false,\"has_van_stock\":true,\"has_new_mtl_stock\":false}"
-			},
-			"created": 1548042836359,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1547295910692.375,
-			"method": "PUT",
-			"modified": 1551063779338,
-			"name": "update document",
-			"parameters": [],
-			"parentId": "fld_ed2e9136b34d48d5ba2775395cb25b79",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ base_url  }}/product_development/product/374368",
-			"_type": "request"
 		},
 		{
 			"_id": "req_e3a03bcdb19a44d1b4dd4337e93aa304",
@@ -270,6 +110,38 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ base_url  }}/_analyze",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4c4568c9d33d4767877f9ca65709722d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \"query\" : {\n    \"match\": {\n      \"title\": \"elasticsearch\"\n    }\n  },\n  \"suggest\" : {\n    \"my-suggestion\" : {\n      \"text\" : \"use\",\n      \"term\" : {\n        \"field\" : \"content\"\n      }\n    }\n  }\n}"
+			},
+			"created": 1553688685381,
+			"description": "https://www.jianshu.com/p/8203f88399b5\n\n[Suggesters](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-suggesters.html)\n* Term suggester\n* Phrase Suggester\n* Completion Suggester\n* Context Suggester\n* Returning the type of the suggester",
+			"headers": [
+				{
+					"id": "pair_3b19d180b1ea44a595927d674d5da707",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549179971023.8125,
+			"method": "POST",
+			"modified": 1553689369680,
+			"name": "Suggester",
+			"parameters": [],
+			"parentId": "fld_ed2e9136b34d48d5ba2775395cb25b79",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog/article/_search",
 			"_type": "request"
 		},
 		{
@@ -440,7 +312,7 @@
 				"text": "{\n\t\"aggs\": {\n\t\t\"all_interests\": {\n\t\t\t\"terms\":{\n\t\t\t\t\"field\": \"user_id\"\n\t\t\t}\n\t\t}\n\t}\n}"
 			},
 			"created": 1552490195878,
-			"description": "",
+			"description": "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html",
 			"headers": [
 				{
 					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
@@ -451,7 +323,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547296124074.4922,
 			"method": "GET",
-			"modified": 1553526076705,
+			"modified": 1553691562585,
 			"name": "Aggregation",
 			"parameters": [],
 			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
@@ -494,6 +366,198 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ base_url  }}/blog/article/_search",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5f96a61f7cca408b8c67478920dca4a5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1553686935333,
+			"description": "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html",
+			"headers": [
+				{
+					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547296207594.125,
+			"method": "GET",
+			"modified": 1553687165034,
+			"name": "Search",
+			"parameters": [],
+			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog/article/_search?q=title:airbnb",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f465dee0e9354e9490f7ed117189ae78",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1553687012913,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547296207587.875,
+			"method": "GET",
+			"modified": 1553687141195,
+			"name": "Search cross  all indices",
+			"parameters": [],
+			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/_all/_search?q=anywhere",
+			"_type": "request"
+		},
+		{
+			"_id": "req_43faa09add6d4ffeb6eba7d73c82c6b6",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"source\" : {\n      \"query\": { \"match\" : { \"{{my_field}}\" : \"{{title_value}}\" } },\n      \"size\" : \"{{my_size}}\"\n    },\n    \"params\" : {\n        \"my_field\" : \"title\",\n        \"title_value\" : \"airbnb\",\n        \"my_size\" : 5\n    }\n}\n"
+			},
+			"created": 1553687276200,
+			"description": "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html\n\nThe `/_search/template` endpoint allows to use the mustache language to pre render search requests, before they are executed and fill existing templates with template parameters.",
+			"headers": [
+				{
+					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547296207591,
+			"method": "GET",
+			"modified": 1553688017519,
+			"name": "Search template",
+			"parameters": [],
+			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
+			"settingDisableRenderRequestBody": true,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/_search/template",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d76cce2e3f57416ab42e66444e36eba0",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"match\": {\n\t\t\t\"content\": \"airbnb\"\n\t\t}\n\t}\n}"
+			},
+			"created": 1553689714769,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547296195983.412,
+			"method": "GET",
+			"modified": 1553689768552,
+			"name": "Count",
+			"parameters": [],
+			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog/article/_count",
+			"_type": "request"
+		},
+		{
+			"_id": "req_72788ea05dfa46bda958e3ff179d5af2",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"match\": {\n\t\t\t\"content\": \"airbnb\"\n\t\t}\n\t}\n}"
+			},
+			"created": 1553689870029,
+			"description": "### Validate API\nThe validate API allows a user to validate a potentially expensive query without executing it. We’ll use the following test data to explain `_validate`",
+			"headers": [
+				{
+					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547296194823.5908,
+			"method": "GET",
+			"modified": 1553690178603,
+			"name": "Validate",
+			"parameters": [],
+			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog/article/_validate/query?explain=true",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6df7d18799544d5ea79513b81ef94226",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"query\": {\n\t\t\"match\": {\n\t\t\t\"content\": \"airbnb\"\n\t\t}\n\t}\n}"
+			},
+			"created": 1553690246983,
+			"description": "### Explain API\nThe explain api computes a score explanation for a query and a specific document. This can give useful feedback whether a document matches or didn’t match a specific query.\n\nNote that a single index must be provided to the index parameter.",
+			"headers": [
+				{
+					"id": "pair_1159fa18dda347d8b814f1946f57ad10",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547296194243.6802,
+			"method": "GET",
+			"modified": 1553690387789,
+			"name": "Explain",
+			"parameters": [],
+			"parentId": "fld_965d39c8532147be8fd85b8561cefa12",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog/article/4/_explain",
 			"_type": "request"
 		},
 		{
@@ -597,10 +661,10 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"mappings\": {\n\t\t\"article\": {\n\t\t\t\"title\": {\"type\": \"string\"},\n\t\t\t\"language\": {\"type\": \"string\"},\n\t\t\t\"content\": {\"type\": \"string\"},\n\t\t\t\"user_id\": {\"type\": \"long\"},\n\t\t\t\"created_at\": {\"type\": \"date\"}\n\t\t}\n\t\t\n\t}\n}"
+				"text": "{\n\t\"article\": {\n\t\t\"properties\": {\n\t\t\t\"title\": {\"type\": \"string\"},\n\t\t\t\"language\": {\"type\": \"string\"},\n\t\t\t\"content\": {\"type\": \"string\"},\n\t\t\t\"user_id\": {\"type\": \"long\"},\n\t\t\t\"created_at\": {\n\t\t\t\t\"type\": \"date\",\n\t\t\t\t\"format\": \"yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis\"\n\t\t\t}\n\t\t}\n\t\t\n\t}\n}"
 			},
 			"created": 1552487697609,
-			"description": "",
+			"description": "mappings can not changed after created\n\n> Why can't you change mappings? This article Changing Mapping with Zero Downtime explains,\n\nIn order to make your data searchable, your database needs to know what type of data each field contains and how it should be indexed.\nIf you switch a field type from e.g. a string to a date, all of the data for that field that you already have indexed becomes useless. One way or another, you need to reindex that field.\nThis applies not just to Elasticsearch, but to any database that uses indices for searching. And if it isn't using indices then it is sacrificing speed for flexibility.",
 			"headers": [
 				{
 					"id": "pair_1503f219ee4f4c348aa7f86a52eaa62f",
@@ -610,8 +674,8 @@
 			],
 			"isPrivate": false,
 			"metaSortKey": -1552128883042,
-			"method": "POST",
-			"modified": 1553526084280,
+			"method": "PUT",
+			"modified": 1553686609652,
 			"name": "Mapping",
 			"parameters": [],
 			"parentId": "fld_b0d01c322d8c480ca10178e53356e40f",
@@ -621,7 +685,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ base_url  }}/blog/_mappings",
+			"url": "{{ base_url  }}/blog/_mapping/article",
 			"_type": "request"
 		},
 		{
@@ -629,7 +693,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "",
-				"text": "{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\", \"_id\": 3} }\n{ \"title\": \"Ruby on Rails\", \"user_id\": 2, \"language\": \"en\", \"content\": \"Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, HTML, CSS and JavaScript for user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern.[4]\", \"tags\": [\"web\", \"framework\", \"ruby\"], \"created_at\": \"2019-03-12 15:20:49\", \"updated_at\": \"2019-03-21 11:20:49\"}\n\n{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\",  \"_id\": 1} }\n{ \"title\": \"ElasticSearch\", \"user_id\": 1, \"language\": \"en\", \"content\": \"Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data so you can discover the expected and uncover the unexpected.\", \"tags\": [\"database\", \"search engine\", \"elasticsearch\", \"java\"], \"created_at\": \"2019-03-11 12:20:49\", \"updated_at\": \"2019-03-11 12:20:49\"}\n\n{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\", \"_id\": 2} }\n{ \"title\": \"Airbnb\", \"user_id\": 5, \"language\": \"en\", \"content\": \"Airbnb ,Inc is a privately held global company headquartered in San Francisco that operates an online marketplace and hospitality service which is accessible via its websites and mobile apps. Members can use the service to arrange or offer lodging, primarily homestays, or tourism experiences. The company does not own any of the real estate listings, nor does it host events; as a broker, it receives commissions from every booking.[3]\", \"tags\": [\"hotel\", \"travel\", \"airbnb\"], \"created_at\": \"2018-03-12 15:20:49\", \"updated_at\": \"2018-03-21 11:20:49\"}\n\n"
+				"text": "{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\", \"_id\": 3} }\n{ \"title\": \"Ruby on Rails\", \"user_id\": 2, \"language\": \"en\", \"content\": \"Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, HTML, CSS and JavaScript for user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern.[4]\", \"tags\": [\"web\", \"framework\", \"ruby\"], \"created_at\": \"2019-03-12 15:20:49\", \"updated_at\": \"2019-03-21 11:20:49\"}\n\n{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\",  \"_id\": 1} }\n{ \"title\": \"ElasticSearch\", \"user_id\": 1, \"language\": \"en\", \"content\": \"Elasticsearch is a distributed, RESTful search and analytics engine capable of solving a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data so you can discover the expected and uncover the unexpected.\", \"tags\": [\"database\", \"search engine\", \"elasticsearch\", \"java\"], \"created_at\": \"2019-03-11 12:20:49\", \"updated_at\": \"2019-03-11 12:20:49\"}\n\n{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\", \"_id\": 2} }\n{ \"title\": \"Airbnb\", \"user_id\": 5, \"language\": \"en\", \"content\": \"Airbnb ,Inc is a privately held global company headquartered in San Francisco that operates an online marketplace and hospitality service which is accessible via its websites and mobile apps. Members can use the service to arrange or offer lodging, primarily homestays, or tourism experiences. The company does not own any of the real estate listings, nor does it host events; as a broker, it receives commissions from every booking.[3]\", \"tags\": [\"hotel\", \"travel\", \"airbnb\"], \"created_at\": \"2018-03-12 15:20:49\", \"updated_at\": \"2018-03-21 11:20:49\"}\n\n{ \"index\" : { \"_index\" : \"blog\", \"_type\" : \"article\", \"_id\": 4} }\n{ \"title\": \"Airbnb just checked in its 500 millionth guest\", \"user_id\": 5, \"language\": \"en\", \"content\": \"For $181 per night, Airbnb guests can stay in a castle in Galway, Ireland. \\n Many have taken the home-sharing business up on this offer with the company sharing today the castle supplies its most-booked private room. Along with that fun datapoint, Airbnb shared a slew of other stats indicating an upward trajectory for the 12-year-old company.\", \"tags\": [\"hotel\", \"news\", \"airbnb\"], \"created_at\": \"2019-03-12 15:20:49\", \"updated_at\": \"2019-03-21 11:20:49\"}\n"
 			},
 			"created": 1553263669969,
 			"description": "Linebreak is not allowed in the document json part",
@@ -649,7 +713,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1551951358233.5,
 			"method": "POST",
-			"modified": 1553527244382,
+			"modified": 1553689829630,
 			"name": "Bulk create",
 			"parameters": [],
 			"parentId": "fld_b0d01c322d8c480ca10178e53356e40f",
@@ -692,6 +756,70 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ base_url  }}/blog/article/_delete_by_query",
+			"_type": "request"
+		},
+		{
+			"_id": "req_88b51797e2534cb5a1fdd4377568871d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1553686128094,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1503f219ee4f4c348aa7f86a52eaa62f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551685071095.75,
+			"method": "DELETE",
+			"modified": 1553686142259,
+			"name": "Delete Index",
+			"parameters": [],
+			"parentId": "fld_b0d01c322d8c480ca10178e53356e40f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog",
+			"_type": "request"
+		},
+		{
+			"_id": "req_61b92f49f92244aba8c97b4c090b2288",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1553686171852,
+			"description": "[indices api](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices.html)",
+			"headers": [
+				{
+					"id": "pair_1503f219ee4f4c348aa7f86a52eaa62f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552128883092,
+			"method": "PUT",
+			"modified": 1553686273337,
+			"name": "Create index",
+			"parameters": [],
+			"parentId": "fld_b0d01c322d8c480ca10178e53356e40f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/blog",
 			"_type": "request"
 		},
 		{
@@ -750,8 +878,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1552486226512.5,
 			"method": "GET",
-			"modified": 1553525741949,
-			"name": "indices",
+			"modified": 1553686821807,
+			"name": "Indices",
 			"parameters": [],
 			"parentId": "fld_a7584f89121f40709fdd279ca9604b99",
 			"settingDisableRenderRequestBody": false,
